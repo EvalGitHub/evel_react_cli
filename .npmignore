@@ -1,0 +1,17 @@
+.idea/
+.gitignore
+tsconfig.json
+
+#doc
+doc/
+
+#test
+test/
+
+# source
+**/*.ts
+*.ts
+
+# definitions
+!**/*.d.ts
+!*.d.ts

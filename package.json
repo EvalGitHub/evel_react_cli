@@ -1,0 +1,32 @@
+{
+  "name": "evel_react_cli",
+  "version": "0.0.1",
+  "description": "this is node cli for react project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "ts-node bin/yoso.ts",
+    "prepublish": "npm run build",
+    "postpublish": "npm run build:clear",
+    "build:clear": "find ./actions ./bin ./commands ./utils ./ui ./component -type f -name '*.d.ts' -delete & find ./actions ./bin ./commands ./utils ./ui ./component -type f -not -name '*.ts*' -delete"
+  },
+  "bin": {
+    "yoso": "bin/yoso.js"
+  },
+  "keywords": [
+    "cli",
+    "react",
+    "cli",
+    "node",
+    "cli"
+  ],
+  "author": "evel",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^9.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^14.6.3"
+  }
+}
