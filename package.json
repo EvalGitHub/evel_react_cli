@@ -1,5 +1,5 @@
 {
-  "name": "evel_react_cli",
+  "name": "evel-react-cli",
   "version": "0.0.1",
   "description": "this is node cli for react project",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "start": "ts-node bin/yoso.ts",
     "prepublish": "npm run build",
     "postpublish": "npm run build:clear",
-    "build:clear": "find ./actions ./bin ./commands ./utils ./ui ./component -type f -name '*.d.ts' -delete & find ./actions ./bin ./commands ./utils ./ui ./component -type f -not -name '*.ts*' -delete"
+    "build:clear": "find ./actions ./bin ./commands  -type f -name '*.d.ts' -delete & find ./actions ./bin ./commands  -type f -not -name '*.ts*' -delete"
   },
   "bin": {
     "yoso": "bin/yoso.js"
@@ -28,5 +28,13 @@
   },
   "dependencies": {
     "@types/node": "^14.6.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvalGitHub/evel_react_cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EvalGitHub/evel_react_cli/issues"
+  },
+  "homepage": "https://github.com/EvalGitHub/evel_react_cli#readme"
 }
