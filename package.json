@@ -1,6 +1,6 @@
 {
   "name": "evel-react-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is node cli for react project",
   "main": "index.js",
   "scripts": {
