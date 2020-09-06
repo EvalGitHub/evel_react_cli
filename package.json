@@ -24,12 +24,18 @@
   "author": "evel",
   "license": "ISC",
   "devDependencies": {
-    "ts-node": "^9.0.0"
+    "@types/ini": "^1.3.30",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
   },
   "dependencies": {
     "@types/node": "^14.6.3",
     "commander": "^6.1.0",
-    "typescript": "^4.0.2"
+    "ini": "^1.3.5",
+    "ink": "^3.0.5",
+    "ink-text-input": "^4.0.0",
+    "nunjucks": "^3.2.2",
+    "react": "^16.13.1"
   },
   "repository": {
     "type": "git",
