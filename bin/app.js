@@ -39,7 +39,7 @@ function copyFile() {
   fs.copy(_initTemplateFile, _targetFileDest)
     .then(() => {
       spinner.stop();
-      console.log(`\n cd ${program.args[0]}...\n`);
+      console.log(`\n cd ${program.args[0]}\n`);
       console.log(chalk.green('run $ npm install \n'));
     })
     .catch(err => console.log(chalk.red(`something error, try again!!...`)))
