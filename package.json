@@ -11,7 +11,7 @@
     "url": "git+https://github.com/EvalGitHub/evel_react_cli.git"
   },
   "bin": {
-    "evel_react_cli": "bin/index"
+    "evel_react_cli": "bin/app.js"
   },
   "keywords": [
     "cli",
@@ -23,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/EvalGitHub/evel_react_cli/issues"
   },
-  "homepage": "https://github.com/EvalGitHub/evel_react_cli#readme"
+  "homepage": "https://github.com/EvalGitHub/evel_react_cli#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "fs-extra": "^9.0.1",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0"
+  }
 }
