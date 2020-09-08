@@ -21,10 +21,14 @@ const _initTemplateFile = __dirname.replace('\/bin', '\/template');
 const _targetFileDest = process.cwd() + `/${program.args[0]}`;
 
 function generator() {
-  if (is_dir_file_exist(_targetFileDest)) {
+  if (!program.args[0]) {
+    console.log(chalk.red('\n file directory is required!'));
+    console.log(chalk.red('\n run $ evel_react_cli dirname \n'));
+    return;
+  } else if (is_dir_file_exist(_targetFileDest)) {
     inquireForCopyFile();
     return;
-  };
+  }
   copyFile();
 }
 generator();
