@@ -13,7 +13,7 @@ program
   /* .command('module')
   .alias('m') */
   .version(_v)
-  .usage('evel_react_cli name')
+  .usage('evel-react-cli name')
   .parse(process.argv)
   
 const _initTemplateFile = __dirname.replace('\/bin', '\/template');
