@@ -11,12 +11,12 @@
     "url": "git+https://github.com/EvalGitHub/evel_react_cli.git"
   },
   "bin": {
-    "evel_react_cli": "bin/app.js"
+    "evel-react-cli": "bin/app.js"
   },
   "keywords": [
     "cli",
-    "react_cli",
-    "evel_react_cli"
+    "react-cli",
+    "evel-react-cli"
   ],
   "author": "evel",
   "license": "ISC",
