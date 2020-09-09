@@ -31,7 +31,8 @@ function generator() {
     inquireForCopyFile();
     return;
   }
-  copyFile();
+  // copyFile();
+  downloadFileFromGithub();
 }
 generator();
 
@@ -80,7 +81,8 @@ function inquireForCopyFile() {
 function downloadFileFromGithub() {
   const spinner = ora("正在初始化项目...\n").start();
   spinner.color = 'green';
-  download('github:EvalGitHub/evel_react_cli/#master', './test', function(err) {
+  // github is must public
+  download('github:EvalGitHub/evel_react_cli#master', './test', function(err) {
     if (err) {
       console.error(err);
       spinner.stop();
