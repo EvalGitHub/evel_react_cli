@@ -1,10 +1,10 @@
 #! /usr/bin/env node
 
-const inquirer = require('inquirer')
-const Promise = require('bluebird')
-const fs = Promise.promisifyAll(require('fs-extra'))
-const program = require('commander')
-const chalk = require('chalk')
+const inquirer = require('inquirer');
+const Promise = require('bluebird');
+const fs = Promise.promisifyAll(require('fs-extra'));
+const program = require('commander');
+const chalk = require('chalk');
 const ora = require('ora');
 const download = require('download-git-repo');
 
@@ -96,7 +96,7 @@ function downloadFileFromGithub() {
   })
 }
 
-
+// edit package.json file
 function editFile({ version, projectName }) {
   // 读取文件
   fs.readFile(`${process.cwd()}/${projectName}/package.json`, (err, data) => {
