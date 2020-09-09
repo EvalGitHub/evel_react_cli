@@ -78,7 +78,7 @@ function inquireForCopyFile() {
 }
 
 // dowload file from github
-function downloadFileFromGithub(_targetFileDest) {
+function downloadFileFromGithub() {
   const spinner = ora("正在初始化项目...\n").start();
   spinner.color = 'green';
   // github is must public
