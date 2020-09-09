@@ -78,11 +78,11 @@ function inquireForCopyFile() {
 }
 
 // dowload file from github
-function downloadFileFromGithub() {
+function downloadFileFromGithub(_targetFileDest) {
   const spinner = ora("正在初始化项目...\n").start();
   spinner.color = 'green';
   // github is must public
-  download('github:EvalGitHub/evel_react_cli#master', './test', function(err) {
+  download('github:EvalGitHub/webpack_reactJS#master', _targetFileDest, function(err) {
     if (err) {
       console.error(err);
       spinner.stop();
